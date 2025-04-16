@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+
+:root {
+  font-family: "EB Garamond", "Gilda Display", "Noto Serif Display", serif;
+  font-style: normal;
+  font-optical-sizing: auto;
+  font-size: 16px;
+  height: 100%;
+  --internal-link-color: black;
+}
+
+body {
+  height: 100%;
+}
+
+#root {
+  box-sizing: border-box;
+  position: relative;
+  margin: 0 auto;
+  min-height: 100%;
+  width: 100%;
+}
+
+header, main, footer {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 10%;
+}
+
+main {
+  padding: 2rem 10%;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.slideshow {
+  width: 100%;
+  object-fit: fill;
+}
