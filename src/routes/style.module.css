@@ -10,15 +10,20 @@
   object-fit: fill;
   animation: fadeIn 0.3s ease-in 0 infinite both;
   animation: fadeIn duration timing-function delay iteration-count direction fill-mode;
+}
+
+.blurredBorder {
   --border-blur: 2rem;
   -webkit-mask-composite: intersect;
   mask-composite: intersect;
-  -webkit-mask-image: linear-gradient(transparent, black var(--border-blur)),
-  linear-gradient(to right, transparent, black var(--border-blur)),
+  -webkit-mask-image: 
+  linear-gradient(to bottom, transparent , black var(--border-blur)),
   linear-gradient(to top, transparent, black var(--border-blur)),
+  linear-gradient(to right, transparent, black var(--border-blur)),
   linear-gradient(to left, transparent, black var(--border-blur));
-  mask-image: linear-gradient(transparent, black var(--border-blur)),
-  linear-gradient(to right, transparent, black var(--border-blur)),
+  mask-image: 
+  linear-gradient(to bottom, transparent, black var(--border-blur)),
   linear-gradient(to top, transparent, black var(--border-blur)),
+  linear-gradient(to right, transparent, black var(--border-blur)),
   linear-gradient(to left, transparent, black var(--border-blur));
 }
