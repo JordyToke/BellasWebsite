@@ -6,7 +6,7 @@
   backdrop-filter: blur(1rem);
 }
 
-.navList {
+.navMenu {
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -14,6 +14,7 @@
 
 .navLink {
   text-transform: capitalize;
+  font-variant: small-caps;
   text-decoration: none;
   color: var(--internal-link-color);
 }
@@ -34,4 +35,5 @@
 .active {
   composes: navLink;
   font-weight: 600;
+  transition: font-weight 150ms;
 }

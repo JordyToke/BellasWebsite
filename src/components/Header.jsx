@@ -7,7 +7,7 @@ const Routes = {};
 const NavBar = () => {
   return (
     <nav>
-      <ul className={styles.navList}>
+      <menu className={styles.navMenu}>
         <li>
           <NavLink to="work" className={({isActive}) => isActive ? styles.active : styles.navLink}>work</NavLink>
         </li>
@@ -20,7 +20,7 @@ const NavBar = () => {
         <li>
           <NavLink to="contact" className={({isActive}) => isActive ? styles.active : styles.navLink}>contact</NavLink>
         </li>
-      </ul>
+      </menu>
     </nav>
   );
 };
@@ -29,7 +29,7 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <NavLink to="/" className={({isActive}) => isActive ? styles.active : styles.navLink}>
-        <h1>Erratica</h1>
+        <img src="ERRATICA-01.svg" alt="ERRATICA logo" style={{width: "200px", color: "red"}} />
       </NavLink>
       <NavBar />
     </header>

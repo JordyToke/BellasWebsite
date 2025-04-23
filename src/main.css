@@ -5,13 +5,31 @@
 }
 
 :root {
-  font-family: "EB Garamond", "Gilda Display", "Noto Serif Display", serif;
+  font-family: "EB Garamond", "Cormorant Garamond", serif;
   font-style: normal;
   font-optical-sizing: auto;
   font-size: 16px;
   height: 100%;
   --internal-link-color: black;
+  scroll-behavior: smooth;
 }
+
+/* START:Google materials icons font styling */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+}
+/* END: Google materials icons font styling */
+
 
 body {
   height: 100%;
@@ -23,6 +41,7 @@ body {
   margin: 0 auto;
   min-height: 100%;
   width: 100%;
+  min-width: 380px;
 }
 
 header, main, footer {
@@ -31,8 +50,17 @@ header, main, footer {
   padding: 0 10%;
 }
 
+
 main {
   padding: 2rem 10%;
+  margin: 2rem 0;
+}
+
+/* remove  */
+@media screen and (max-width: 600px) {
+  header, main, footer {
+    padding: 0;
+  }
 }
 
 footer {
@@ -42,9 +70,4 @@ footer {
   display: flex;
   justify-content: center;
   margin: 0 auto;
-}
-
-.slideshow {
-  width: 100%;
-  object-fit: fill;
 }

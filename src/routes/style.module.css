@@ -1,3 +1,24 @@
 .biography p {
   text-indent: 1rem;
 }
+
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+.heroImage {
+  width: 100%;
+  height: auto;
+  object-fit: fill;
+  animation: fadeIn 0.3s ease-in 0 infinite both;
+  animation: fadeIn duration timing-function delay iteration-count direction fill-mode;
+  --border-blur: 2rem;
+  -webkit-mask-composite: intersect;
+  mask-composite: intersect;
+  -webkit-mask-image: linear-gradient(transparent, black var(--border-blur)),
+  linear-gradient(to right, transparent, black var(--border-blur)),
+  linear-gradient(to top, transparent, black var(--border-blur)),
+  linear-gradient(to left, transparent, black var(--border-blur));
+  mask-image: linear-gradient(transparent, black var(--border-blur)),
+  linear-gradient(to right, transparent, black var(--border-blur)),
+  linear-gradient(to top, transparent, black var(--border-blur)),
+  linear-gradient(to left, transparent, black var(--border-blur));
+}
