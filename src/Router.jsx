@@ -4,8 +4,8 @@ import App from "./App";
 import { Home, Work, Contact, Biography, Studio, NotFound } from "./routes";
 
 const Router = () => (
-  <BrowserRouter>
-    <Routes basename="/Erratica">
+  <BrowserRouter basename="/Erratica">
+    <Routes>
       <Route path="/" element={<App />}>
         <Route index element={<Home />} />
         <Route path="work" element={<Work />} />
