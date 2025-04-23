@@ -1,11 +1,11 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router";
 import App from "./App";
 import { Home, Work, Contact, Biography, Studio, NotFound } from "./routes";
 
 const Router = () => (
   <BrowserRouter>
-    <Routes>
+    <Routes basename="/Erratica">
       <Route path="/" element={<App />}>
         <Route index element={<Home />} />
         <Route path="work" element={<Work />} />
